@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <body>
+        <script>
+            function openDialog() {
+                var dialogElem = document.getElementById("idDialog");
+                dialogElem.showdal();
+            }
+
+            function closeDialog() {
+                var dialogElem = documetn.getElementById("idDialog");
+                dialogElem.close();
+            }
+        </script>
+        <dialog open>This is a dialog</dialog>
+        <dialog open>
+            <form method="dialog">
+                Do you want to continue?
+                <button type="submit">Confirm</button>
+            </form>
+        </dialog>
+        <button onclick="openDialog();">Open dialog</button>
+        <dialog id="iddialog">
+            this is dialogbox
+            <button onclick="closedialog()">close this Dialog</button>
+        </dialog>
+
+
+
+    </body>
+</head>
+
+</html>

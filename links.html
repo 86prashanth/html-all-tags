@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<title>anchor tags</title>
+
+<head>
+
+    <a href="url">Link text</a>
+    <a href="http://www.google.com/">google</a>
+    <p>tag attribute targets</p>
+    <a href="https:///www.google.com/" target="_self">google</a>
+    <a href="https:///www.google.com/" target="_top">google</a>
+    <a href="https:///www.google.com/" target="_blank">google</a>
+    <a href="https:///www.google.com/" target="_parent">google</a>
+
+    <iframe id="idframe"></iframe>
+
+    <script>
+        var doc = document.getElementById('idframe').contentWindow.document;
+        doc.open();
+        doc.write('<a target="_top" href="http://www.google.com">Visiting home</a>');
+        doc.close();
+    </script>
+</head>
+
+</html>

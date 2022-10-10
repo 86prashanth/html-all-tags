@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<title>Output tag</title>
+
+<head>
+    <script>
+        function changeVal() {
+            out.value = text1.value;
+        }
+    </script>
+
+    <body>
+        <output>This is in Output tag</output>
+        <input type="text" id="text1" oninput="changeVal();">
+        <output id="out">This is in output tag</output>
+
+    </body>
+</head>
+
+</html>

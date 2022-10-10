@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #d1 {
+            border: 3px solid red;
+        }
+        
+        #d2 {
+            border: 2px solid green;
+        }
+    </style>
+
+    <body>
+        <h4>Simple div</h4><br>
+        <div>This is testing div text</div><br>
+        <h4>html elements inside the div tag</h4>
+        <div>
+            <div>This is the div 1</div>
+            <div>this is the div 2</div>
+            <img src="images/2.jpg" width=300>
+            <a href="#"> This is dummy link</a>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>Rajinikanth</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>Rajashekar</td>
+                    <td>34</td>
+                </tr>
+            </table>
+        </div>
+        <h4>Simplle usage of div tag with css</h4>
+        <div id="d1">
+            div 1
+        </div>
+        <div id="d2">
+            div 2
+        </div>
+        <h4>Simple usage of div tage with javascript</h4>
+        <div id="now">
+            div now
+        </div>
+        <button onclick="hide();">Hide</button>
+        <script>
+            function hide() {
+                document.getElementById("now").style.display = "none";
+            }
+        </script>
+    </body>
+</head>
+
+</html>

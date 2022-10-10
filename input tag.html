@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<body>
+    <title>input tags</title>
+
+    <head>
+        <script>
+            function getcolor() {
+                var elem = document.getElementById("clr");
+                alert(elem.value)
+            }
+
+            function getDate() {
+                var elem = document.getElementById("dt");
+                alert(elem.value)
+            }
+
+            function getMonth() {
+                var elem = document.getElementById("mnth");
+                alert(elem.value);
+            }
+
+            function getWeek() {
+                var elem = document.getElementById("wk");
+                alert(elem.value)
+            }
+
+            function getTime() {
+                var elem = document.getElementById("tm");
+                alert(elem.value)
+            }
+        </script>
+
+        <body>
+            <h2>text value fpr type attribute in input tag</h2>
+            <input type="text">
+            <p>Password value for type attribute in input tag</p>
+            <input type="password">
+            <p>button value for type attribute in input tag</p>
+            <input type="button" value="iam button">
+            <p>Difference between input type="button" and button tag</p>
+            <input type="button" value="sample button">
+            <button> sample image <img src="images/2.jpg"></button>
+            <p>Check box value for type attribute input tag</p>
+            <input type="checkbox">
+            <p>With label tag</p>
+            <input type="checkbox">No lable<br>
+            <label><input type="checkbox">In label</label>
+            <p>with lable tag and for attribute</p>
+            <input type="checkbox">No label <br>
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">Click me to</label>
+            <p>Radio value for type attribute in input tag</p>
+            <input type="radio">
+            <p>With label tag</p>
+            <input type="radio">No label
+            <label>
+            <input type="radio">with lable
+        </label>
+            <p>With label tag and for attribute</p>
+            <input type="radio">No label <br>
+            <input type="radio" id="radiobutton">
+            <label for="radiobutton">Clickme</label>
+
+            <p>Usage of name attribute with input tag and radio value</p>
+            Select Gender(no name attribute) <br>
+            <label><input type="radio">male</label>
+            <label><input type="radio">Female</label>
+            <br> Select gender(with same name attribute value) <br>
+            <label>
+            <input type="radio" name="gender">Male</label>
+            <label> <input type="radio" name="gender">female</label> </body>l
+        <p>range value for type attribute in input tag</p>
+        <input type="range">
+        <p>RANGE VALUE with min and max attributes</p>
+
+        <input type="range" min="1" max="2">
+
+        <input type="range" min="1" max="100">
+
+        <p>Image value for type attribute in input tag</p>
+        <input type="image" src="image/2.jpg"> </body>
+<p>difference between img tag and input type="image"</p>
+<input type="image" src="images/2.jpg">
+<img src="images/2.jpg">
+<p>Number value for type attribute in input tag</p>
+<input type="number">
+<p>Mini and max attrubute</p>
+<input type="nummber" min="3" max="10">
+<p>with form tag</p>
+
+<form>
+    <input type="number" min="4" max="10">
+    <input type="submit"> </form>
+<p>search value for type attribute in input tag</p>
+
+<input type="search">
+
+<p>Hidden value for type attribute in input tag</p>
+<input type="hidden" value="10">
+<p>file value for type attribute in input tag</p>
+<input type="file">
+<p>Select multiple files</p>
+<input type="file" multiple>
+<p>accept attribute</p>
+<input type="file" accept="image/png">
+<input type="file" accept=".png">
+<input type="file" accept=".png,.jpg,.doc">
+<input type="file" accept="image/*">
+<p>COLOR value for type attribute in input tag</p>
+
+<input type="color">
+<p>Access color value using javascript</p>
+<input type="color" id="clr">
+<button onclick="getcolor();">Get color</button>
+
+<p>date value for type attribute in input tag</p>
+<input type="date">
+<p>Access date value using javascript</p>
+<input type="date" id="dt">
+<button onclick="getDate();">Get selected date</button>
+<p>datetime local value for type attribute in input tag</p>
+<input type="datetime-local">
+<input type="datetime-local" id="dt">
+<button onclick="getDateTime();">GEt selected date </button>
+<input type="month" id="mnt">
+<button onclick="getMonth();">Get selected month and year</button>
+<input type="week" id="wk">
+<button onclick="getWeek();">Get selected week and year</button>
+<input type="time" id="tm">
+<button onclick="getTime();">Get selected time</button>
+
+
+<p>reset value for type attribute in input tag</p>
+
+<form>
+
+    <input type="text">
+    <input type="text">
+    <input type="text" value="test2">
+    <input type="reset" value="Reset"> </form>
+<p>tel value for type attribute in input tag</p>
+<input type="tel">
+<form>
+    <input type="tel" pattern="[0-9] {10}">
+    <input type="submit">
+
+    <p>Custom error message using title attribuet</p>
+    <form>
+        <input type="tel" pattern="[0=9]{10}" title="please enter correct phone number">
+
+
+        <input type="submit">
+
+        <p>Email value for type attribute in input tag </p>
+
+        <input type="email">
+
+        <p>with form tag</p>
+        <form>
+            <input type="email"> <input type="submit" value="submit">
+
+        </form>
+        <p>Custom error message using title attribute</p>
+        <form>
+            <input type="email" title="please enter correct email">
+            <input type="submit">
+        </form>
+        <p>Url value for type attribute in input tag</p>
+        <input type="url">
+        <p>with form tag</p>
+        <form>
+
+            <input type="url">
+            <input type="submit">
+
+        </form>
+
+        <p>Custom error messge using title attribute</p>
+        <form>
+            <input type="url" title="please entter correct ">
+            <input type="submit">
+        </form>
+
+
+
+
+
+
+
+
+
+
+    </form>
+    </body>
+    </head>
+
+    </Html>

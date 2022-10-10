@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .cls2 {
+            background-color: green;
+            font-size: 250px;
+        }
+        
+        .font_cls {
+            font-size: 33px;
+        }
+    </style>
+
+    <body>
+        <div class="cls2">
+            this is the first div
+        </div>
+        <p>same class value in multiple elements</p>
+        <div class="font_cls">
+            This is the first div
+        </div>
+        <div class="font_cls">
+            This is the second div
+        </div>
+        <p>used with javascript</p>
+        <div class="cls2">
+            This is the first div
+        </div>
+        <div class="cls2">
+            This is the second div
+        </div>
+        <script>
+            var elem = document.getElementByClassName("cls1");
+            for (var i = 0; i < elem.length; i++) {
+                elem[i].style.fontSize = "32px";
+            }
+        </script>
+        <p>Contenteditable attribute</p>
+        <div contenteditable="true">
+            click me,and edit me
+        </div>
+        <p>Context menu</p>
+        <menu type="context" id="mymenu">
+            <menuitem label="refresh" icon="iconpath.jpg"></menuitem>
+        </menu>
+        <p>accessing custom data attibute in css</p>
+        <style>
+            [data-location-id="IND"] {
+                background: red;
+            }
+        </style> <input type="text" data-location-id="IND">
+    </body>
+</head>
+
+</html>

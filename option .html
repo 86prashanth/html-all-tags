@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <body>
+        <select>
+            <option>apple</option>
+            <option>mango</option>
+            <option>apple</option>
+        </select>
+        <h4>Under the datalist</h4>
+        <input type="text" list="fruits">
+        <datalist id="fruits">
+            <option>Apple</option>
+            <option>Apple</option>
+            <option>Apple</option>
+        </datalist>
+        <select>
+            <option>Apple</option>
+            <option selected>Mango</option>
+            <option>ORange</option>
+        </select>
+        <select>
+            <option>karthik</option>
+            <option disabled>mango</option>
+            <option>Orange</option>
+        </select>
+        <select>
+            <option value="1">apple</option>
+            <option value="2">mango</option>
+            <option value="3">orange</option>
+        </select>
+        <p>Acces the dropdown value using javascript</p>
+        <select id="ddl">
+            <option value="1">Apple</option>
+            <option value="2">mango</option>
+            <option value="3">Orange</option>
+        </select>
+        <button onclick="getddlValue();">get dropdown value</button>
+        <script>
+            function getddlvalue() {
+                alert(ddl.value);
+            }
+        </script>
+    </body>
+</head>
+
+</html>

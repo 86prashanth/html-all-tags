@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <body>
+        <select>
+                <option>apple</option>
+                <option>Mango</option>
+                <option>garba</option>
+                <option>grapes</option>
+            </select>
+
+        <p>size attribute in select tag</p>
+        <select size="2">
+
+            <option>apple</option>
+            <option>spinner</option>
+            <option>googly</option>
+            <option>faces</option>
+            <option>apple</option>
+        </select>
+        <p>Option tag selected ,disabled ,and value</p>
+        <select>
+            <option>apple</option>
+            <option selected>mango</option>
+        </select>
+        <p>disable attribute</p>
+        <select>
+            <option>apple</option>
+            <option disabled>mango</option>
+            <option>orange</option>
+        </select>
+        <p>value attribute in optopon tag</p>
+        <select>
+            <option value="1">apple</option>
+            <option value="2">managp</option>
+            <option value="3">canada</option>
+            <option value="4">four</option>
+        </select>
+        <p>Access the dropdown value using javascript </p>
+        <select id="ddl">
+        <option valuue="1">Apple</option>
+        <option valuue="2">shot</option>
+        <option valuue="3">return</option>
+        <option valuue="4">Unique</option>
+        </select>
+        <button onclick="getddlvalue();">Get dropdown value</button>
+        <script>
+            function getddlvalue() {
+                alert(ddl.value);
+            }
+        </script>
+    </body>
+</head>
+
+</html>
